@@ -19,8 +19,8 @@ nav { /* CSS del nav */
     padding: 10px;
     box-sizing: border-box;
     display: flex; /* Esto convierte el nav en un tipo flex y es importante para usar el flexbox */
-    justify-content: center;  /* Centra los elementos horizontalmente */
-    align-items: center;      /* Centra los elementos verticalmente (si hay más alto) */
+    justify-content: center;  /* Centra lo que hay en el nav horizontalmente */
+    align-items: center;      /* Centra lo que hay en el nav*/
 }
 
 nav ul { /* CSS de la lista dentro de la etiqueta nav */
