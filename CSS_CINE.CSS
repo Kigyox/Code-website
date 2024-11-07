@@ -1,69 +1,83 @@
-
-body { /*css del body de la pagina*/
+body { /* CSS del body de la página */
     font-family: Arial, sans-serif; 
     background-color: #181818; 
     color: #e0e0e0;
-    padding: 10px; /*relleno alrededor de la pagina*/
+    padding: 10px; /* Relleno alrededor de la página */
 }
-#Creed { /*css del ID Creed*/
+
+#Creed { /* CSS del ID Creed */
     text-align: center; 
     font-size: 50px;    
 }
 
-h1, h2 { /*css del h1 y h2*/
+h1, h2 { /* CSS de h1 y h2 */
     color: #e67e22; 
 }
 
-nav { /*css del nav*/
+nav { /* CSS del nav */
     background-color: #2c3e50;
     padding: 10px;
+    box-sizing: border-box;
+    display: flex; /* Esto convierte el nav en un tipo flex y es importante para usar el flexbox */
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Centra los elementos verticalmente (si hay más alto) */
 }
 
-nav ul { /*css de la lista dentro de la etiqueta nav*/
-    list-style-type: none; /*estilo de la lista este hace que no tenga los puntos delante*/
+nav ul { /* CSS de la lista dentro de la etiqueta nav */
+    list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0;
     margin: 0;
-    display: flex; /*para que se vea horizontal el menu*/
+    display: flex; /* Esto hace que los elementos de lista se ubiquen en una fila */
 }
-ol li a{/*css de la lista personajes principales*/
-    color: #1332cd;
-    text-decoration: none; /*para quitar el texto subrayado*/
+
+nav ul li { /* Asegura que los elementos de la lista estén alineados horizontalmente */
+    margin: 0; /* Elimina márgenes adicionales */
 }
-nav ul li a { /*css del ID Creed*/
+
+nav ul li a { /* CSS para los enlaces dentro de <ul> */
     color: #ecf0f1;
     padding: 10px 15px;
-    
+    text-align: center; 
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
-section { /*css del section*/
-    margin-top: 10px; /*separacion de las imagenes*/
+
+ol li a { /* CSS para la lista de personajes principales */
+    color: #1332cd;
+    text-decoration: none;
+}
+
+section { /* CSS de la sección */
+    margin-top: 10px; /* Separación de las imágenes */
     padding: 10px;
     background-color: #131518;
 }
-table { /*css de la tabla*/
-    width: 90%; /*ancho de la tabla*/
+
+table { /* CSS de la tabla */
+    width: 90%; /* Ancho de la tabla */
     margin-top: 30px;
 }
 
-th, td {
-    border: 1px solid #444; /*bordes de la tabla con su acho y color*/
+th, td { /* Bordes de la tabla */
+    border: 1px solid #444;
 }
 
-th { /*css de la etiqueta th*/
+th { /* CSS de la etiqueta th */
     background-color: #e67e22;
 }
 
-legend { /*css del legend del forms*/
+legend { /* CSS del legend en los formularios */
     color: rgb(240, 165, 26);
     font-size: 20px;
     font-family: 'Georgia', serif;
 }
 
-button { /*css de los botones*/
+button { /* CSS de los botones */
     background-color: #e67e22;
     color: white;
     padding: 6px 10px;
 }
-ul li a{ /*css de la lista con mas informacion*/
+
+ul li a { /* CSS de los enlaces en la lista con más información */
     color: #1332cd;
     text-decoration: none;
 }
